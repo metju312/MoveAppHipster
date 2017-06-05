@@ -1,0 +1,11 @@
+version: '2'
+services:
+    moveapphipster-postgresql:
+        image: postgres:9.6.2
+        # volumes:
+        #     - ~/volumes/jhipster/MoveAppHipster/postgresql/:/var/lib/postgresql/
+        environment:
+            - POSTGRES_USER=MoveAppHipster
+            - POSTGRES_PASSWORD=sql
+        ports:
+            - 5432:5432
